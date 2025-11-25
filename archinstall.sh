@@ -31,7 +31,8 @@ pacman_packages=(
     udiskie
     kvantum
     kvantum-qt5 
-    cliphist
+    hypridle
+    hyprlock
     pamixer
     playerctl
     papirus-icon-theme
@@ -46,9 +47,7 @@ pacman_packages=(
 yay_packages=(
     wlogout
     waybar-module-pacman-updates-git
-    hyprlock-git
     pyprland
-    hypridle-git
     xfce-polkit
     waypaper-git
     hyprshot-git
@@ -93,9 +92,6 @@ sudo flatpak override --filesystem=xdg-config/gtk-3.0
 sudo flatpak override --filesystem=xdg-config/Kvantum:ro
 sudo flatpak override --env=QT_STYLE_OVERRIDE=kvantum
 flatpak install org.kde.KStyle.Kvantum/x86_64/5.15-22.08 org.kde.KStyle.Kvantum/x86_64/5.15-23.08 org.kde.KStyle.Kvantum/x86_64/6.5 org.kde.KStyle.Kvantum/x86_64/6.6 org.kde.KStyle.Kvantum/x86_64/5.15 org.kde.KStyle.Kvantum/x86_64/5.15-21.08
-
-echo "Changing shell to ZSH..."
-chsh -s /bin/zsh
 
 sudo touch /etc/sddm.conf 
 
