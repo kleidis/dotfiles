@@ -49,7 +49,6 @@ yay_packages=(
     waybar-module-pacman-updates-git
     pyprland
     xfce-polkit
-    waypaper-git
     hyprshot-git
 )
 
